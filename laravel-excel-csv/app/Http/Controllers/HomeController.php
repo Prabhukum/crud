@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use app\Imports\UsersImport;
+use App\Imports\UsersImport;
 
-use Maatwebsite\Excel\facades\Excel;
+use Maatwebsite\Excel\Facades\Excel;
 
 class HomeController extends Controller
 {
@@ -17,7 +17,7 @@ class HomeController extends Controller
 
 
 public  function import(){
-    Excel::import(new UsersImport, request()->file('saloon_data.xlsx'));
+    Excel::import(new UsersImport, request()->file('file'));
     return redirect()->back();
 }
 

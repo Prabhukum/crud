@@ -36,7 +36,6 @@
             <div class="pull-right">
                 <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#importModal"><i
                     class="bi-plus-circle me-2" style="color:red"></i>Import Data</button>
-                <a class="btn btn-success" href="{{ route('users.create') }}"> Create New user</a>
                 <a href="{{route('export')}}" class="btn btn-light me-2">Export Data</a>
                 <button class="btn btn-danger me-2 resetAll" data-bs-toggle="modal" id="resetAll" data-bs-target="#resetModal">Reset ALL</button>
             </div>
@@ -77,6 +76,10 @@
         </tr>
         @endforeach
     </table>
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-success" href="{{ route('users.create') }}"> Create New user</a>
+    </div>
+
 
     {!! $users->links() !!}
 

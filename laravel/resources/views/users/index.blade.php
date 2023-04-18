@@ -27,16 +27,15 @@
     </div>
 </div>
 {{-- end import Detail --}}
-
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel CRUD</h2>
+                <h2>Customer Details</h2>
             </div>
             <div class="pull-right">
                 <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#importModal"><i
-                    class="bi-plus-circle me-2" style="color:red"></i>Import_product_Data</button>
-                <a href="{{route('export')}}" class="btn btn-light me-2">Export_product_Data</a>
+                    class="bi-plus-circle me-2" style="color:red"></i>Import_Customer_Data</button>
+                <a href="{{route('export')}}" class="btn btn-light me-2">Export_Customer_Data</a>
                 <button class="btn btn-danger me-2 resetAll" data-bs-toggle="modal" id="resetAll" data-bs-target="#resetModal">Reset ALL</button>
             </div>
         </div>
@@ -51,7 +50,7 @@
     <table class="table table-bordered">
         <tr>
             <th>No</th>
-            <th>Product_Name</th>
+            <th>Customer_Name</th>
             <th>Customer_Email</th>
             <th width="280px">Modify</th>
         </tr>

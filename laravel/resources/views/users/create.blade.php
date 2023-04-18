@@ -34,12 +34,12 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
+            <div class="form-group mt-4">
                 <strong>email:</strong>
-                <textarea class="form-control" name="email" placeholder="Email"></textarea>
+                <input class="form-control" name="email" placeholder="Email">
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-end mt-2">
                 <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>

@@ -35,8 +35,8 @@
             </div>
             <div class="pull-right">
                 <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#importModal"><i
-                    class="bi-plus-circle me-2" style="color:red"></i>Import Data</button>
-                <a href="{{route('export')}}" class="btn btn-light me-2">Export Data</a>
+                    class="bi-plus-circle me-2" style="color:red"></i>Import_product_Data</button>
+                <a href="{{route('export')}}" class="btn btn-light me-2">Export_product_Data</a>
                 <button class="btn btn-danger me-2 resetAll" data-bs-toggle="modal" id="resetAll" data-bs-target="#resetModal">Reset ALL</button>
             </div>
         </div>
@@ -51,9 +51,9 @@
     <table class="table table-bordered">
         <tr>
             <th>No</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th width="280px">Action</th>
+            <th>Product_Name</th>
+            <th>Customer_Email</th>
+            <th width="280px">Modify</th>
         </tr>
         @foreach ($users as $user)
         <tr>

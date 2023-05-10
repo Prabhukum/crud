@@ -18,9 +18,24 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'Date',
         'email',
-        'password',
+        'BM_BatchID',
+        'CountyName',
+        'BM_BatchName',
+        'ImageID',
+        'ImageName',
+        'AddendumID',
+        'DocType_Name',
+        'Level_name',
+        'FieldLabel',
+        'IndexFieldValue',
+        'VerifyFieldValue',
+        'IndexUser',
+        'VerifyUser',
+        'ErrorOrNoError',
+        'VendorName',
+        'Status',
     ];
 
     /**

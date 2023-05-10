@@ -2,11 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use Maatwebsite\Excel\Excel as ExcelExcel;
+use Maatwebsite\Excel\Facades\Excel;
+
+
+
+
+
 use Illuminate\Http\Request;
 
 use App\Imports\UsersImport;
 
-use Maatwebsite\Excel\Facades\Excel;
+// use Maatwebsite\Excel\Facades\Excel;
 
 class HomeController extends Controller
 {
@@ -17,13 +24,13 @@ class HomeController extends Controller
 
 
 public  function import(){
-    Excel::import(new UsersImport, request()->file('file'));
+ Excel::import(new UsersImport, request()->file('file'));
     return redirect()->back();
 }
 
-// public function fileExport()
-//     {
-//         return Excel::download(new UsersExport, 'users-collection.xlsx');
-//     }
+ public function fileExport()
+     {
+        return Excel::download(new UsersExport, 'users-collection.xlsx');
+     }
 
 }

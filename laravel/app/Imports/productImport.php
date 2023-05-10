@@ -2,7 +2,7 @@
 
 namespace App\Imports;
 
-use App\Models\product;
+use App\Models\User;
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class productImport implements ToModel
@@ -16,25 +16,93 @@ class productImport implements ToModel
     {
         $count = NULL;
 
-        $count = product::where('product_id',$row[0])->first();
+        $count = User::where('id',$row[0])->first();
 
         if(isset($count)) {
 
-            product::where('product_id', $row[0])
+            User::where('id', $row[0])
                     ->update([
-                        'product_name'=>$row[1],
-                        'product_desc'=>$row[2],
-                        'product_mrp'=>$row[3],
-                        'product_image'=>$row[4]
+
+                        'Date'             => $row[1],
+
+                'BM_BatchID'       => $row[2],
+
+                'BM_BatchName'     => $row[3],
+
+                'CountyName' => $row[4],
+
+                'ImageID'          => $row[5],
+
+                'ImageName'        => $row[6],
+
+                'AddendumID'       => $row[7],
+
+                'DocType_Name'     => $row[8],
+
+                'Level_name'       => $row[9],
+
+                'FieldLabel'       => $row[10],
+
+                'IndexFieldValue'  => $row[11],
+
+                'VerifyFieldValue' => $row[12],
+
+                'IndexUser'        => $row[13],
+
+                'VerifyUser'       => $row[14],
+                
+                'Error/No Error'   => $row[15],
+
+                'Vendor Name'      => $row[16],
+
+                'Status'           => $row[17],
+
+                'created_at'       => now(),
+
+                'updated_at'       => now(),
                     ]);
             return;
         }
         else {
-            return new product([
-                'product_name'=>$row[1],
-                'product_desc'=>$row[2],
-                'product_mrp'=>$row[3],
-                'product_image'=>$row[4]
+            return new user([
+
+                'Date'             => $row[1],
+
+                'BM_BatchID'       => $row[2],
+
+                'BM_BatchName'     => $row[3],
+
+                 'CountyName' => $row[4],
+
+                'ImageID'          => $row[5],
+
+                'ImageName'        => $row[6],
+
+                'AddendumID'       => $row[7],
+
+                'DocType_Name'     => $row[8],
+
+                'Level_name'       => $row[9],
+
+                'FieldLabel'       => $row[10],
+
+                'IndexFieldValue'  => $row[11],
+
+                'VerifyFieldValue' => $row[12],
+
+                'IndexUser'        => $row[13],
+
+                'VerifyUser'       => $row[14],
+
+                'Error/No Error'   => $row[15],
+
+                'Vendor Name'      => $row[16],
+
+                'Status'           => $row[17],
+
+                'created_at'       => now(),
+
+                'updated_at'       => now(),
             ]);
         }
     }

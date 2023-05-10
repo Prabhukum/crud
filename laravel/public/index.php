@@ -4,6 +4,7 @@ use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
+ini_set('memory_limit', '1024M'); // Adjust the value as needed
 
 /*
 |--------------------------------------------------------------------------
@@ -53,3 +54,5 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
+
+

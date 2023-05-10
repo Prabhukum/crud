@@ -39,10 +39,96 @@
                 <input class="form-control" name="email" placeholder="Email">
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 text-end mt-2">
-                <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+
     </div>
 
+    <div class="form-group">
+        <label for="email">BM_BatchID</label>
+        <input type="text" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">CountyName</label>
+        <input type="text" name="CountyName" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">BM_BatchName</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">ImageID</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">ImageName</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">AddendumIDa</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">DocType_Name</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Level_name</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">FieldLabel</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">IndexFieldValue</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">VerifyFieldValue</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">IndexUser</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">VerifyUser</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">IndexUser</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Error/No Error</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Vendor Name</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Vendor Name</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 text-end mt-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+</div>
 </form>
 @endsection

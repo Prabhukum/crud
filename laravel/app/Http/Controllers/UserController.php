@@ -55,6 +55,7 @@ class UserController extends Controller
 
         return redirect()->route('users.index')
                         ->with('success','User created successfully.');
+                        
     }
 
     /**
@@ -113,7 +114,7 @@ class UserController extends Controller
                         ->with('success','User deleted successfully');
     }
     public function resetData(Request $request) {
-        product::truncate();
+        User::truncate();
 	}
 
     public function import()
